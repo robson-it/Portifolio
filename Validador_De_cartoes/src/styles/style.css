@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2b2b2b;
+    color: #f2e3c6;
+    border-bottom: 5px solid #f8a13f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#logotipo {
+    width: 35%;
+    border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #2b2b2b;
+    color: #f2e3c6;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 5px solid #f8a13f;
+}
+
+
+button {
+    background: #2b2b2b;
+    color: #f2e3c6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background: #f2e3c6;
+    color: #2b2b2b;
+    border-color: #2b2b2b;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#tabelaCartoes {
+    width: 70%;
+    border-radius: 8px 8px 0px 0px;
+    border-collapse: collapse;
+    margin: 40px 0px 40px ;
+    margin-left: 15%;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 70px;    
+}
+
+
+#tabelaCartoes th {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #2b2b2b;
+    color: #f2e3c6;
+}
+
+#tabelaCartoes td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#tabelaCartoes tr:nth-child(even) {
+    background-color: #f2f2f2;
+    height: 10px;
+}
+
+#tabelaCartoes tr:hover {
+    background-color: #ddd;
+    height: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #tabelaCartoes {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
+

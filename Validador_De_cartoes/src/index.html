@@ -1,0 +1,55 @@
+<!--
+Crie uma estrutura HTML5.
+Utilize o arquivo ../src/css/style.css para adicionar estilos à sua página.
+Utilize o arquivo ../src/js/app.js para adicionar interatividade à sua página.
+Crie um cabeçalho com o título "Gênio dos Cartões" e com uma logotipo redonda com a imagem ../src/images/capa.png
+Centralizado na página crie um formulário que utilizará a função validarCartao() do arquivo ../src/js/app.js,
+esse formulário deve conter apenas um campo para inserir o número do cartão, permitindo apenas números, também 
+deve conter um botão para enviar o formulário.
+Abaixo do formulário deve exibir uma tabela com id tabelaCartoes com 3 colunas: 
+"Número do Cartão", "Válido/Inválido" e "Bandeira", 
+inicialmente a tabela estará vazia, mas conterá os títulos dos campos.
+-->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gênio dos Cartões</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
+    <script src="../src/scripts/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gênio dos Cartões</h1>
+    </header>
+    <main>
+        <form>
+            <img src="../src/images/logotipo.png" id="logotipo" alt="Logotipo">
+            <label for="numeroCartao"></label>
+            <input type="text" id="numeroCartao" placeholder="Número do Cartão" name="numeroCartao"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 16); if(this.value.length < 16) { this.setCustomValidity('Número inválido'); } else { this.setCustomValidity(''); }" required>  
+            <button UseSubmitBehaviour="false" type="button" onclick="validarCartao()">Enviar</button>
+
+        </form>
+        <table id="tabelaCartoes">
+            <thead>
+                <tr>
+                    <th>Número do Cartão</th>
+                    <th>Válido/Inválido</th>
+                    <th>Bandeira</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <footer>
+            <p>Desenvolvido por: Robson Rocha</p>
+        </footer>
+        </table>
+    </main>
+</html>
+
+
+
+
